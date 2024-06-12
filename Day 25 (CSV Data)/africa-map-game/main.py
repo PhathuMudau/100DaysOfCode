@@ -19,13 +19,10 @@ guessed_countries = []
 while len(guessed_countries) < len(data.country):
 
     answer_country = screen.textinput(title=f"{len(guessed_countries)}/{total} Countries Correct",
-                                      prompt="Guess a country? Type exit when finished.")
+                                      prompt="Guess a country? Type 'Exit' when finished.")
 
     if answer_country == "Exit":
-        missing_countries = []
-        for country in country_list:
-            if country not in guessed_countries:
-                missing_countries.append(country)
+        missing_countries = [country for country in country_list if country not in guessed_countries]
         new_data = pd.DataFrame(missing_countries)
         new_data.to_csv("Countries_to_Learn.csv")
         break
@@ -39,7 +36,7 @@ while len(guessed_countries) < len(data.country):
         t = turtle.Turtle()
         t.penup()
         t.hideturtle()
-        country_data = data[data.country == answer_country]
+        country_data = data[data.country == answer]
         t.goto(int(country_data.x.iloc[0]), int(country_data.y.iloc[0]))
         t.write(answer)
 
