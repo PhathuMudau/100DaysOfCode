@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab5a628e-6ca5-4beb-8f68-1ace1e34798d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Day 25 (CSV Data)/africa-map-game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 25 (CSV Data)/africa-map-game/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 25 (CSV Data)/africa-map-game/Countries_to_Learn.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 25 (CSV Data)/africa-map-game/Countries_to_Learn.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +20,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/phath/Documents/GitHub/100DaysOfCode/Day 26 (NATO Alphabet)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phath/Documents/GitHub/100DaysOfCode/Day 26 (NATO Alphabet)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Day 26 (NATO Alphabet)" />
