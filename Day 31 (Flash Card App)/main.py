@@ -1,6 +1,9 @@
 from tkinter import *
 import pandas as pd
 import random
+from gtts import gTTS
+import os
+import playsound
 
 BACKGROUND_COLOR = "#B1DDC6"
 FONT_ONE = ("Ariel", 60, "bold")
@@ -26,6 +29,11 @@ def new_word():
     canvas.itemconfig(title_text, text="French", fill="black")
     canvas.itemconfig(word_text, text=random_word["French"], fill="black")
     canvas.itemconfig(card_bg, image=card_front)
+    window.after(100)
+    audio_output = gTTS(text=random_word["French"], lang="fr")
+    audio_output.save("english_word.mp3")
+    playsound.playsound("C:/Users/phath/Documents/GitHub/100DaysOfCode/Day 31 (Flash Card App)/english_word.mp3", True)
+    os.remove("english_word.mp3")
     flip_timer = window.after(5000, func=switch_word)
 
 
@@ -36,6 +44,10 @@ def switch_word():
     canvas.itemconfig(title_text, text="English", fill="white")
     canvas.itemconfig(word_text, text=random_word["English"], fill="white")
     canvas.itemconfig(card_bg, image=card_back)
+    audio_output = gTTS(text=random_word["English"], lang="en")
+    audio_output.save("french_word.mp3")
+    playsound.playsound("C:/Users/phath/Documents/GitHub/100DaysOfCode/Day 31 (Flash Card App)/french_word.mp3", True)
+    os.remove("french_word.mp3")
 
 
 # --------------------------------- Generating New Word --------------------------------- #
